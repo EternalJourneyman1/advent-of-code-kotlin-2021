@@ -1,3 +1,7 @@
+package day01
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int =
             input
@@ -11,12 +15,12 @@ fun main() {
 
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01")
+    val testInput = readInput("day01/Day01")
     val inputIncreases = part1(testInput)
     val inputDepthIncreases = part2(testInput)
 
 
-    val input = readInput("Day01")
+    val input = readInput("day01/Day01")
     println("Part 1: ${part1(input)}")
     check(inputIncreases == 1228)
     println("Part 2: ${part2(input)}")
